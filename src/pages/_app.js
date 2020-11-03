@@ -1,7 +1,9 @@
 import Router from "next/router";
+import { ToastContainer } from "react-toastify";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
-import "../tailwindcss/style.css";
+import "../../tailwindcss/style.css";
+import "react-toastify/dist/ReactToastify.css";
 
 NProgress.configure({});
 Router.events.on("routeChangeStart", () => {
@@ -15,7 +17,12 @@ Router.events.on("routeChangeError", () => {
 });
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <ToastContainer position="top-center"></ToastContainer>
+    </>
+  );
 }
 
 export default MyApp;
