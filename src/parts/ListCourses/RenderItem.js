@@ -9,8 +9,7 @@ export default function RenderItem({ item }) {
         <figure className="item-image">
           <IconPlay></IconPlay>
           <img
-            // src={item?.thumbnail ?? ""}
-            src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            src={item?.thumbnail ?? ""}
             alt={item?.name ?? "some information"}
           />
         </figure>
@@ -21,7 +20,7 @@ export default function RenderItem({ item }) {
           <h5 className="text-lg text-gray-600">
             {item?.level ?? "course level"}
           </h5>
-          <Link href="/course/[slug]" as={`/courses/${item.id}`}>
+          <Link href="/courses/[id]" as={`/courses/${item.id}`}>
             <a className="link-wrapped"></a>
           </Link>
         </div>

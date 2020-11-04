@@ -28,9 +28,7 @@ function Random({ data }) {
 
 Random.getInitialProps = async () => {
   try {
-    const data = await fetch(
-      "https://skripsi-api-gateway.herokuapp.com/courses"
-    )
+    const data = await fetch("https://dimaspurwanto.xyz:8085/courses")
       .then((response) => response.json())
       .then((json) => json);
 

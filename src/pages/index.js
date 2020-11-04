@@ -6,6 +6,7 @@ import Hero from "src/parts/Hero";
 import ListCourses from "src/parts/ListCourses/index";
 import ListCategory from "src/parts/ListCategories/index";
 import Footer from "src/parts/Footer";
+import courses from "src/constants/api/courses";
 
 function Home({ data }) {
   return (
@@ -38,8 +39,8 @@ function Home({ data }) {
 
 Home.getInitialProps = async () => {
   try {
-    const data = await axios.get(`/courses`);
-    return { data: data.data.data };
+    const data = await courses.all();
+    return { data: data.data };
   } catch (error) {
     return error;
   }
