@@ -76,11 +76,11 @@ function Courses({ data }) {
         >
           <div className="px-4">
             <h3 className="text-6xl text-center text-teal-500 font-semibold">
-              Library
+              Perpustakaan
             </h3>
             <h4 className="text-lg text-center text-white">
-              Jangan mau kalah update dengan yang lainnya. <br /> Yuk ikuti
-              perkembangan teknologi.
+              Jangan mau kalah update dengan yang lainnya. <br /> Yuk asah terus
+              kemampuan kamu.
             </h4>
             <div className="flex flex-col relative" ref={selectWrapper}>
               <input
@@ -93,9 +93,9 @@ function Courses({ data }) {
                 placeholder={
                   SearchFocus
                     ? "Ketik minimal 3 karakter untuk mencari"
-                    : "Lagi nyari kelas apa?"
+                    : "Kelas apa yang kamu cari?"
                 }
-                className="bg-white focus:outline-none transition-all duration-200 focus:border-teal-500 border border-gray-400 px-4 py-3 w-full mt-6"
+                className="bg-white rounded-md focus:outline-none transition-all duration-200 focus:border-gray-400 border border-gray-300 px-4 py-3 w-full mt-6"
               />
               {Search.length >= 3 && (
                 <div

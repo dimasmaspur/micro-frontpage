@@ -24,9 +24,19 @@ export default function Hero() {
             onChange={(event) => setstate(event.target.value)}
             type="text"
             className="bg-white focus:outline-none border-0 px-6 py-3 w-1/2"
+            style={{
+              borderTopLeftRadius: "0.375em",
+              borderBottomLeftRadius: "0.375em",
+            }}
             placeholder="Alamat Email Kamu"
           />
-          <button className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-6 py-3">
+          <button
+            style={{
+              borderTopRightRadius: "0.375em",
+              borderBottomRightRadius: "0.375em",
+            }}
+            className=".rounded-lg bg-orange-500	 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-6 py-3"
+          >
             Daftar
           </button>
         </form>

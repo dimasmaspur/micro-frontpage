@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import axios from "src/configs/axios";
 import Header from "src/parts/Header";
+import About from "src/parts/About";
 import Hero from "src/parts/Hero";
 import ListCourses from "src/parts/ListCourses/index";
 import ListCategory from "src/parts/ListCategories/index";
@@ -23,7 +24,14 @@ function Home({ data }) {
             <Hero></Hero>
           </div>
         </section>
-        <section className="container mx-auto" style={{ marginTop: "47rem" }}>
+        <section
+          className="container mx-auto pt-24"
+          style={{ marginTop: "44rem" }}
+        >
+          <About></About>
+        </section>
+        <hr style={{ marginTop: "7rem" }} />
+        <section className="container mx-auto" style={{ marginTop: "7rem" }}>
           <ListCourses data={data}></ListCourses>
         </section>
         <section className="container mx-auto pt-24">

@@ -5,9 +5,9 @@ import formatThousand from "src/helpers/formatThousand";
 export default function RenderItem({ item }) {
   return (
     <div className="w-1/6 px-4 h-100">
-      <div className="card relative transition-all duration-300">
+      <div className="card relative transition-all duration-300 rounded-md">
         {item.imageName}
-        <div className="card-meta mt-10">
+        <div className=" card-meta mt-10">
           <h4 className="text-lg transition-all duration-200 w-1/2">
             {item.name}
           </h4>

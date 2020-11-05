@@ -33,14 +33,14 @@ export default function Header({ onLight }) {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/courses">
             <a
               className={[
                 linkColor,
                 "text-white hover:text-teal-500 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Harga
+              Perpustakaan
             </a>
           </Link>
         </li>
@@ -52,10 +52,11 @@ export default function Header({ onLight }) {
                 "text-white hover:text-teal-500 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Unggulan
+              Harga
             </a>
           </Link>
         </li>
+
         <li>
           <Link href="/">
             <a
@@ -73,7 +74,7 @@ export default function Header({ onLight }) {
             target="_blank"
             rel="noopener noreferrer"
             href={linkCTA}
-            className="bg-green-700 hover:bg-green-800 transition-all duration-200 text-white hover:text-teal-500 
+            className="bg-green-700 rounded-md hover:bg-green-800 transition-all duration-200 text-white hover:text-teal-500 
             text-lg px-6 py-3 ml-6"
           >
             {textCTA}

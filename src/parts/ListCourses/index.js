@@ -5,6 +5,13 @@ import RenderItem from "./RenderItem";
 export default function ListCourses({ data }) {
   return (
     <>
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl text-gray-900">Kelas Kami</h2>
+        <p className="mt-2 mb-24 text-md text-gray-700">
+          Materi kami sangat up to date dan selalu <br />
+          mengikuti perkembangan teknologi
+        </p>
+      </div>
       <div className="flex justify-between items-center">
         <div className="w-auto">
           <h2 className="text-lg text-gray-600">Kelas Terbaru</h2>
