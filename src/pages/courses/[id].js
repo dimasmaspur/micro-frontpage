@@ -12,6 +12,7 @@ import CoursePhoto from "src/parts/Details/CoursePhoto";
 import { CSSTransition } from "react-transition-group";
 import RenderPreview from "src/parts/Details/RenderPreview";
 import HappyStudent from "src/parts/Details/HappyStudent";
+import formatThousand from "src/helpers/formatThousand";
 
 function DetailsCourse({ data }) {
   console.log(data);
@@ -107,7 +108,7 @@ function DetailsCourse({ data }) {
                     {data?.type === "free" ? (
                       "Gratis"
                     ) : (
-                      <span>Rp {data?.price ?? 0}</span>
+                      <span>Rp {formatThousand(data?.price ?? 0)}</span>
                     )}
                   </h5>
                   <a
@@ -194,7 +195,6 @@ function DetailsCourse({ data }) {
           </div>
         </div>
       </section>
-      <div style={{ height: 2000 }}></div>
       <section className="mt-24 bg-green-700 py-12" ref={footer}>
         <Footer />
       </section>

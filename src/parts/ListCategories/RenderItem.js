@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import formatThousand from "src/helpers/formatThousand";
 
 export default function RenderItem({ item }) {
   return (
@@ -11,7 +12,7 @@ export default function RenderItem({ item }) {
             {item.name}
           </h4>
           <h5 className="text-sm transition-all mt-2 duration-500">
-            {item.total}
+            {formatThousand(item.total)}
           </h5>
           <Link href="#">
             <a className="link-wrapped"></a>
