@@ -32,6 +32,13 @@ function Home({ data }) {
         </section>
         <hr style={{ marginTop: "7rem" }} />
         <section className="container mx-auto" style={{ marginTop: "7rem" }}>
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl text-gray-900">Kelas Kami</h2>
+            <p className="mt-2 mb-24 text-md text-gray-700">
+              Materi kami sangat up to date dan selalu <br />
+              mengikuti perkembangan teknologi
+            </p>
+          </div>
           <ListCourses data={data}></ListCourses>
         </section>
         <section className="container mx-auto pt-24">
