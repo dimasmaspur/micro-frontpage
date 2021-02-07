@@ -26,8 +26,8 @@ export default function ListCourses({ data }) {
             return <RenderItem item={item} key={index}></RenderItem>;
           })
         ) : (
-          <div className="w-full text-center-py-12">No Item Found</div>
-        )}
+            <div className="w-full text-center-py-12">No Item Found</div>
+          )}
       </div>
     </>
   );

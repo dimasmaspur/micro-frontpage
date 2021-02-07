@@ -41,8 +41,8 @@ function Home({ data }) {
           </div>
           <ListCourses data={data}></ListCourses>
         </section>
-        <section className="container mx-auto pt-24">
-          <ListCategory data={data}></ListCategory>
+        <section className="container mx-auto pt-16">
+          {/* <ListCategory data={data}></ListCategory> */}
         </section>
         <section className="mt-24 bg-green-700 py-12">
           <Footer />

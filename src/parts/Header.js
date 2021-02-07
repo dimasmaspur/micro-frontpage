@@ -44,7 +44,7 @@ export default function Header({ onLight }) {
             </a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/">
             <a
               className={[
@@ -68,7 +68,7 @@ export default function Header({ onLight }) {
               Ulasan
             </a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <a
             target="_blank"

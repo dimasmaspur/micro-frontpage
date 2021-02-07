@@ -108,8 +108,8 @@ function DetailsCourse({ data }) {
                     {data?.type === "free" ? (
                       "Gratis"
                     ) : (
-                      <span>Rp {formatThousand(data?.price ?? 0)}</span>
-                    )}
+                        <span>Rp {formatThousand(data?.price ?? 0)}</span>
+                      )}
                   </h5>
                   <a
                     href={`${process.env.NEXT_PUBLIC_MEMBERPAGE_URL}/joined/${data.id}`}
@@ -138,7 +138,7 @@ function DetailsCourse({ data }) {
                 </p>
               </h6>
             </section>
-            <section className="mt-10">
+            {/* <section className="mt-10">
               <h6 className="font-medium text-gray-900 text-2xl mb-4">
                 Foto <span className="text-green-400">Kelas</span>
               </h6>
@@ -148,10 +148,10 @@ function DetailsCourse({ data }) {
                     <CoursePhoto data={photo.image} key={index}></CoursePhoto>
                   ))
                 ) : (
-                  <div className="w-full text-center py-12">No Image Found</div>
-                )}
+                    <div className="w-full text-center py-12">No Image Found</div>
+                  )}
               </div>
-            </section>
+            </section> */}
             <section className="mt-10">
               <h6 className="font-medium text-gray-900 text-2xl mb-4">
                 Yang Akan <span className="text-green-400">Dipelajari</span>
@@ -159,8 +159,8 @@ function DetailsCourse({ data }) {
               {data?.chapters?.length > 0 ? (
                 <RenderPreview previews={data.chapters}></RenderPreview>
               ) : (
-                <div className="w-full text-center py-12">No Chapter Found</div>
-              )}
+                  <div className="w-full text-center py-12">No Chapter Found</div>
+                )}
             </section>
             <section className="mt-10">
               <h6 className="font-medium text-gray-900 text-2xl mb-4">
@@ -182,15 +182,16 @@ function DetailsCourse({ data }) {
                 </div>
               </div>
             </section>
-            <section className="mt-10 w-full md:w-6/12">
-              <h6 className="font-medium text-gray-900 text-2xl mb-4">
+            <section className="mt-24 w-full md:w-6/12">
+              <p>&nbsp;</p>
+              {/* <h6 className="font-medium text-gray-900 text-2xl mb-4">
                 Happy <span className="text-green-400">Students</span>
               </h6>
               {data.reviews?.map?.((testimonial, index) => {
                 return (
                   <HappyStudent key={index} data={testimonial}></HappyStudent>
                 );
-              })}
+              })} */}
             </section>
           </div>
         </div>
@@ -207,6 +208,6 @@ DetailsCourse.getInitialProps = async (props) => {
   try {
     const data = await courses.details(id);
     return { data: data };
-  } catch (error) {}
+  } catch (error) { }
 };
 export default DetailsCourse;
